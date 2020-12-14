@@ -1,0 +1,411 @@
+*{
+    box-sizing: border-box;
+}
+
+.main_background {
+    background-image: url("images/main_background.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sua_lop_hoc {
+    background-color: white;
+}
+
+.text-center {
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#task_bar{
+    background: #ffeaea;;
+    border-radius: 0;
+    border: #ffffff;
+    padding: 10px;
+}
+
+#title{
+    color: crimson;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+#navbar{
+    border-radius: 0;
+    padding: 20px;
+    background: #ffeaea;
+    border-bottom: 2px solid #fc9797;
+}
+
+#classroom {
+    font-size: xx-large;
+    color: black;
+}
+
+#page {
+    font-size: x-large;
+    color: blue;
+}
+#page2 {
+    font-size: large;
+}
+#page3 {
+    font-size: large;
+}
+
+#page1:hover{
+    background-color: lightgrey;
+}
+
+#page2:hover{
+    background-color: lightgrey;
+}
+
+/* Định dạng link điều hướng */
+
+.topnav{
+    height: 50px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;}
+
+/* Thay đổi màu liên kết khi di chuột qua */
+.topnav a:hover {
+    background-color: #5f5f5f;
+    color: white;
+    font-weight: bold;
+}
+
+.card {
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+#card{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.card_st {
+    border: 2px solid #fac0c0;
+    border-radius: 5px;
+}
+
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.container1{
+    height: 150px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+}
+
+.row{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#slider_menu{
+    padding-left: 30px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#image{
+    width: 100%;
+    height: 100px;
+}
+
+.sidenav a {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 100px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.card_admin_page{
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+
+#image_admin_page{
+    width: 50px;
+    height: 50px;
+}
+
+#table_mon_hoc{
+    width: 100%;
+    height: 200px;
+}
+
+#ten_lop{
+    color: black;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+.dropdown-toggle{
+    font-size: 30px;
+}
+
+#row{
+    padding-top: 20px;
+}
+
+#ten_giang_vien{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.container2{
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #cfcfcf;
+}
+
+
+.container2 a{
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+#table_thong_bao{
+    width: 100%;
+    height: 80px;
+}
+
+.card1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+
+.card1:hover {
+    background-color: #d9edf7;
+    border-radius: 10px;
+}
+
+.card2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#cmt_section {
+    width: 100%;
+    height: 50px;
+}
+
+
+.responsive_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 80%;
+    max-height: 300px;
+    border-radius: 15px;
+}
+
+#table_list{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table{
+    width: 80%;
+    text-align: center;
+}
+td{
+    padding: 10px;
+}
+tr.item{
+    border-top: 1px solid #9f9e9e;
+    border-bottom: 1px solid #9f9e9e;
+    font-size: larger;
+}
+
+tr.item:hover{
+    background-color: #d9edf7;
+}
+
+tr.item td{
+    min-width: 150px;
+}
+
+tr.header{
+    font-weight: bold;
+    font-size: large;
+}
+
+#responsive_table{
+    overflow-x:auto;
+}
+
+/* THÊM stream_teacher*/
+#st_nguoi_thong_bao{
+    text-align: left;
+    padding: 25px;
+    float: left;
+}
+
+#textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.control{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.control1{
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* */
+#subject {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 200px;
+}
+
+
+#submit_post{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.container_cmt{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.container_cmt1{
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.h50 {
+    height: 50px;
+}
+
+#text_center{
+    text-align: center;
+}
+
+.card_noti {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    border: 3px solid #e9a7a7;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.select_option{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}

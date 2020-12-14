@@ -1,0 +1,129 @@
+-------------Test trang đăng nhập------------- (username: tdt; password: 123456)
+
+Điều kiện 1: Username đúng
+Điều kiện 2: Mật khẩu đúng 
+
+Bảng quyết định:
+TH1: ĐK1: F ĐK2: F => F
+TH2: ĐK1: F ĐK2: T => F
+TH3: ĐK1: T ĐK2: F => F
+TH4: ĐK1: T ĐK2: T => T
+
+Điều kiện 1: Username đúng 
+
+Điều kiện 2: Mật khẩu đúng: đủ kí tự (Kiểm thử phân vùng tương đương & Phân tích giá trị biên)
+- Vùng hợp lệ: >= 6 kí tự
+- Vùng không hợp lệ: <6 kí tự
+
+- Phân tích giá trị biên:
+	.Không nhập kí tự nào
+	.Nhập 5 kí tự
+	.Nhập 6 kí tự
+	.Nhập lớn hơn 6 kí tự
+
+
+-------------Test trang đăng kí------------
+
+Điều kiện 1: Email chưa tồn tại
+Điều kiện 2: Username chưa tồn tại
+Điều kiện 3: Mật khẩu hợp lệ
+Điều kiện 4: Confirm mật khẩu chính xác
+
+Bảng quyết định:
+TH1: ĐK1: F ĐK2: F ĐK3: F ĐK4: F => F
+
+TH2: ĐK1: T ĐK2: F ĐK3: F ĐK4: F => F
+TH3: ĐK1: F ĐK2: T ĐK3: F ĐK4: F => F
+TH4: ĐK1: F ĐK2: F ĐK3: T ĐK4: F => F
+TH5: ĐK1: F ĐK2: F ĐK3: F ĐK4: T => F
+
+TH6: ĐK1: T ĐK2: T ĐK3: F ĐK4: F => F
+TH7: ĐK1: T ĐK2: F ĐK3: T ĐK4: F => F
+TH8: ĐK1: T ĐK2: F ĐK3: F ĐK4: T => F
+TH9: ĐK1: F ĐK2: T ĐK3: T ĐK4: F => F
+TH10: ĐK1: F ĐK2: T ĐK3: F ĐK4: T => F
+TH11: ĐK1: F ĐK2: F ĐK3: T ĐK4: T => F
+
+TH12: ĐK1: T ĐK2: T ĐK3: T ĐK4: F => F
+TH13: ĐK1: T ĐK2: T ĐK3: F ĐK4: T => F
+TH14: ĐK1: T ĐK2: F ĐK3: T ĐK4: T => F
+TH15: ĐK1: F ĐK2: T ĐK3: T ĐK4: T => F
+
+TH16: ĐK1: T ĐK2: T ĐK3: T ĐK4: T => T
+
+Điều kiện 1: Email chưa tồn tại 
+<=> test những email đã có (demon112500@gmail.com)
+
+Điều kiện 2: Username chưa tồn tại
+<=> test những Username đã có (tdt)
+
+Điều kiện 3: Mật khẩu hợp lệ: đúng các kiểu kí tự (Kiểm thử phân vùng tương đương)
+=> test kí tự đặt biệt (? , . / $ % ^ ,....)
+=> test chữ hoa chữ thường
+=> test ít hơn 6 kí tự
+=> test từ 6 kí tự trở lên
+
+Điều kiện 4: Confirm mật khẩu chính xác
+=> Test khác mật khẩu đã nhập 
+
+-------------Test thêm sản phẩm ------------
+
+Điều kiện 1: Đã nhập tên sản phẩm 
+Điều kiện 2: Giá bán sp hợp lệ
+Điều kiện 3: Đã nhập mô tả sản phẩm
+Điều kiện 4: Đã thêm hình ảnh minh hoạ sản phẩm
+
+Bảng quyết định:
+TH1: ĐK1: F ĐK2: F ĐK3: F  ĐK4: F => F
+
+TH2:  ĐK1: F ĐK2: T ĐK3: T  ĐK4: T => F
+TH3:  ĐK1: T ĐK2: F ĐK3: T  ĐK4: T => F
+TH4:  ĐK1: T ĐK2: T ĐK3: F  ĐK4: T => F
+TH5:  ĐK1: T ĐK2: T ĐK3: T  ĐK4: F => F
+
+TH6:  ĐK1: F ĐK2: F ĐK3: T  ĐK4: T => F
+TH7:  ĐK1: F ĐK2: T ĐK3: F  ĐK4: T => F
+TH8:  ĐK1: F ĐK2: T ĐK3: T  ĐK4: F => F
+TH9:  ĐK1: T ĐK2: F ĐK3: F  ĐK4: T => F
+TH10: ĐK1: T ĐK2: F ĐK3: T  ĐK4: F => F
+TH11: ĐK1: T ĐK2: T ĐK3: F  ĐK4: F => F
+
+TH12: ĐK1: F ĐK2: F ĐK3: F  ĐK4: T => F
+TH13: ĐK1: F ĐK2: F ĐK3: T  ĐK4: F => F
+TH14: ĐK1: F ĐK2: T ĐK3: F  ĐK4: F => F
+TH15: ĐK1: T ĐK2: F ĐK3: F  ĐK4: F => F
+
+TH16: ĐK1: T ĐK2: T ĐK3: T  ĐK4: T => T
+
+
+Điều kiện 1: Đã nhập tên sản phẩm 
+<=> test bỏ trống tên sản phẩm
+
+Điều kiện 2: Giá bán sp hợp lệ (Phân tích giá trị biên)
+
+giá trị nhỏ nhất: 1.000.000
+giá trị nhỏ lớn: 1.000.000.000.000.000.000
+nhỏ hơn giá trị nhỏ nhất: 999.999
+lớn hơn giá trị lớn nhất: 1.000.000.000.000.000.001
+giá trị trung bình: 500.000.000.000.000.000 
+
+Điều kiện 3: Đã nhập mô tả sản phẩm
+<=> test bỏ trống mô tả tên sản phẩm
+
+Điều kiện 4: Đã thêm hình ảnh minh hoạ sản phẩm
+<=> test bỏ trống hình ảnh minh hoạ sản phẩm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
